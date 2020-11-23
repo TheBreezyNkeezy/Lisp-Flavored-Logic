@@ -3,7 +3,7 @@ This project, which I called Lisp Flavored Logic, was my final project for Stanf
 
 The foundation of the project essentially required coding in C++ (in Qt) a parser for S-expressions which was inspired by [this Scala implementation from Mark Might](http://matt.might.net/articles/parsing-s-expressions-scala/), which would then feed into another parser/lexer for propositional logic keywords and variables in each S-expression. These two parsers were then connected into a minimal REPL.
 
-In all, this little REPL can evaluate any well-formed formula (WFF) in the language of propositional logic (L<sup>bool</sup>) --- here showing the pretty print of the double parsing at the S-expression and "Lang-expression" levels respectively --- with the extra features of:
+In all, this little REPL can evaluate any well-formed formula (WFF) in the language of propositional logic (L<sup>bool</sup>) --- here showing the pretty print of the double parsing at the S-expression and "Lang-expression" levels respectively (see my poster "slides" in the PDF above for more detailed info) --- with the extra features of:
 * utilizing various alternates for the possible set of operators, including a subset of [Polish notations](https://en.wikipedia.org/wiki/Polish_notation#Polish_notation_for_logic) for negation `N` (alternatively `not`, `~`, `[-]`, or `!`), conjunction `K` (alternatively `and`, `&`, or `[*]`), disjunction `A` (alternatively `or`, `||`, or `[+]`), conditional `C` (alternatively `implies`, `imp`, or `==>`), and finally biconditional `E` (alternatively `iff` or `<=>`), as well as multiple encodings for `true` (alternatively `t` or `1`) and `false` (alternatively `f` or `0`):
 ```
 LPL REPL >> ((and) true false)
