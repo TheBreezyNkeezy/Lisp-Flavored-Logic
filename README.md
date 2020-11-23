@@ -1,5 +1,7 @@
 # Lisp Flavored Logic
+
 **NOTE: This project was written using the Stanford C++ library, which is omitted; only relevant code of my design is exhibited here. --- The Breezy Nkeezy**
+
 This project, which I called Lisp Flavored Logic, was my final project for Stanford's CS 106X (Programming Abstractions Accelerated) in fall 2019. I aimed to explore (1) my love for programming languages, especially S-expression based languages like Common Lisp and Clojure that I had learned the summer before, and (2) applications of what I'd learned in logic classes to creating a simple interpreter for propositional (sentential) logic.
 
 The foundation of the project essentially required coding in C++ (in Qt) a parser for S-expressions which was inspired by [this Scala implementation from Mark Might](http://matt.might.net/articles/parsing-s-expressions-scala/), which would then feed into another parser/lexer for propositional logic keywords and variables in each S-expression. These two parsers were then connected into a minimal REPL.
